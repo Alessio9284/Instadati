@@ -1,4 +1,4 @@
-# Progetto API di Instagram e di Google
+# Progetto API di Instagram e di Google charts
 
 Creazione di grafici su likes, commenti e altro (ultimi 20 Post).
 
