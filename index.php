@@ -35,19 +35,17 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-        <section>
-            <header class="clearfix">
-                <h1>Instagram <span>display your photo stream</span></h1>
-            </header>
-            <main>
-                <ul class="grid">
-                    <li><img src="img/instagram-big.png" alt="Instagram logo"></li>
-                    <li>
-                        <a class="login" href="<?php echo $loginUrl ?>">» Login with Instagram</a>
-                        <h4>Use your Instagram account to login.</h4>
-                    </li>
-                </ul>
-            </main>
-        </section>
+        <header class="clearfix">
+            <h1>Instagram <span>display your photo stream</span></h1>
+        </header>
+        <main>
+            <ul class="grid">
+                <li><img src="img/instagram-big.png" alt="Instagram logo"></li>
+                <li>
+                    <a class="login" href="<?php echo $loginUrl ?>">» Login with Instagram</a>
+                    <h4>Use your Instagram account to login.</h4>
+                </li>
+            </ul>
+        </main>
     </body>
 </html>

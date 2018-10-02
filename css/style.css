@@ -57,12 +57,12 @@ a {
   text-decoration: none;
 }
 
-section {
+body {
   width: 100%;
   position: relative;
 }
 
-section > header {
+body > header {
   width: 90%;
   max-width: 1240px;
   margin: 0 auto;
@@ -70,12 +70,12 @@ section > header {
   padding: 0 30px 50px 30px;
 }
 
-section > header {
+body > header {
   padding: 60px 30px 50px;
   text-align: center;
 }
 
-section > header h1 {
+body > header h1 {
   font-size: 34px;
   line-height: 38px;
   margin: 0 auto;
@@ -83,7 +83,7 @@ section > header h1 {
   color: #333;
 }
 
-section > header h1 span {
+body > header h1 span {
   display: block;
   font-size: 20px;
   font-weight: 300;
@@ -201,25 +201,18 @@ main > footer p {
 
 table
 {
-  background-size: cover;
-  width: 1400px;
-  position: absolute;
+  width: 900px;
   left: 50%;
-  margin-left: -700px;
+  position: absolute;
+  margin-left: -450px;
+  border-collapse: collapse;
+  margin-bottom: 200px
 }
 
-#tabellaGenerale, #mediaLike, #previsioneLike
+#tabellaGenerale, #mediaLike, #previsioneLike, #mediaCommenti, #paroleUsate, #previsioneCommenti
 {
-  width: 700px;
-  height: 400px;
-  float: right;
-}
-
-#mediaCommenti, #paroleUsate, #previsioneCommenti
-{
-  width: 700px;
-  height: 400px;
-  float: left;
+  width: 900px;
+  height: 500px;
 }
 
 #spazio
@@ -227,7 +220,17 @@ table
   margin-bottom: 1000px;
 }
 
+#sfondo
+{
+  background-image: url("../img/sfondo.jpg");
+}
+
+#bianco
+{
+  background-color: white;
+}
+
 td
 {
-  padding: 10px;
+  border: 1px solid black;
 }

@@ -58,43 +58,47 @@
         <!-- FUNZIONI GRAFICI -->
         <script src="js/script.js"></script>
     </head>
-    <body>
-        <section>
-            <header class="clearfix">
-                <img src="img/instagram.png" alt="Instagram logo">
-                <h1>Account di <?php echo $arrayDati[0]->user->username; ?></h1>
-            </header>
-            <main>
-                <table>
-                    <tr>
-                        <td><div id="tabellaGenerale"></div></td>
-                        <td><div id="paroleUsate"></div></td>
-                    </tr>
-                    <tr>
-                        <td><div id="mediaLike"></div></td>
-                        <td><div id="mediaCommenti"></div></td>
-                    </tr>
-                    <tr>
-                        <td><div id="previsioneLike"></div></td>
-                        <td><div id="previsioneCommenti"></div></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <ul class="grid">
-                                <?php visualizzaGraficoLikeCommenti($arrayDati); ?>
-                                <?php visualizzaGraficoParole($arrayDati, 10); ?>
-                                <?php visualizzaGraficoMediaLike($date, $medieLike); ?>
-                                <?php visualizzaGraficoMediaCommenti($date, $medieCommenti); ?>
-                                <?php visualizzaGraficoAndamentoLike($date, $medieLike, 10); ?>
-                                <?php visualizzaGraficoAndamentoCommenti($date, $medieCommenti, 10); ?>
+    <body id="sfondo">
+        <header class="clearfix">
+            <img src="img/instagram.png" alt="Instagram logo">
+            <h1>Account di <?php echo $arrayDati[0]->user->username; ?></h1>
+        </header>
+        <main>
+            <table>
+                <tr>
+                    <td><div id="tabellaGenerale"></div></td>
+                </tr>
+					<tr>
+                    <td><div id="paroleUsate"></div></td>
+                </tr>
+                <tr>
+                    <td><div id="mediaLike"></div></td>
+                </tr>
+                <tr>
+                    <td><div id="mediaCommenti"></div></td>
+                </tr>
+                <tr>
+                    <td><div id="previsioneLike"></div></td>
+                </tr>
+                <tr>
+                    <td><div id="previsioneCommenti"></div></td>
+                </tr>
+                <tr id="bianco">
+                    <td>
+                        <ul class="grid">
+                            <?php visualizzaGraficoLikeCommenti($arrayDati); ?>
+                            <?php visualizzaGraficoParole($arrayDati, 10); ?>
+                            <?php visualizzaGraficoMediaLike($date, $medieLike); ?>
+                            <?php visualizzaGraficoMediaCommenti($date, $medieCommenti); ?>
+                            <?php visualizzaGraficoAndamentoLike($date, $medieLike, 10); ?>
+                            <?php visualizzaGraficoAndamentoCommenti($date, $medieCommenti, 10); ?>
 
-                                <h1>Foto e Video Instagram</h1>
-                                <?php visualizzaFotoVideo($arrayDati); ?>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-            </main>
-        </section>
+                            <h1>Foto e Video Instagram</h1>
+                            <?php visualizzaFotoVideo($arrayDati); ?>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </main>
     </body>
 </html>
