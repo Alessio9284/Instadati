@@ -6,6 +6,8 @@
      * @link https://github.com/cosenary/Instagram-PHP-API
      * @author Christian Metz
      * @since 01.10.2013
+     *
+     * @author Alessio Torricelli
      */
 
     require 'instagramAPI/Instagram.php';

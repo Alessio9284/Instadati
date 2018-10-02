@@ -1,4 +1,9 @@
 <?php
+
+    /**
+     * @author Alessio Torricelli
+     */
+    
     /* -.-.-.-.-.-.- GRAFICI -.-.-.-.-.-.-*/
 
     /* 1) VISUALIZZA GRAFICO DEI LIKE E DEI COMMENTI DEGLI ULTIMI POST */

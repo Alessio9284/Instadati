@@ -1,3 +1,7 @@
+/**
+ * @author Alessio Torricelli
+ */
+
 window.onload = function()
 {
   /* CARICAMENTO GRAFICI */

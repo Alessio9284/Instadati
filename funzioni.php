@@ -1,4 +1,9 @@
 <?php
+
+    /**
+     * @author Alessio Torricelli
+     */
+    
     require 'instagramAPI/Instagram.php';
     use MetzWeb\Instagram\Instagram;
 
