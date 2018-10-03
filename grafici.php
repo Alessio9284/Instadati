@@ -87,11 +87,10 @@
     {
         echo "<script>function graficoPrevisioneLike(){ var data = google.visualization.arrayToDataTable([['', 'Likes']";
 
-        $media = abs(trovaMin($medieLikes) / trovaMax($medieLikes) - 1);
+        $media = (trovaMin($medieLikes) + trovaMax($medieLikes)) / 2;
         $numMedie = count($medieLikes);
-        $primo = $medieLikes[(int)$numMedie/2];
         $ultimo = $medieLikes[$numMedie - 1];
-        $andamento = $ultimo - $primo;
+        $andamento = ($ultimo - $media) / 10;
 
         for($x = 0; $x < $numMedie; $x++)
         {
@@ -101,17 +100,15 @@
         for($y = 1; $y <= $giorni; $y++)
         {
             $dataFutura = date('Y-m-d h:i:s', strtotime('+'. $y .' days'));
-            if($andamento > 0)
+            
+            if($andamento < -0.09 || $andamento > 0.09)
             {
-                echo ",['$dataFutura', ".($ultimo+$media)."]";
-            }
-            elseif($andamento == 0)
-            {
-                echo ",['$dataFutura', $ultimo]";
+                $ultimo += $andamento;
+                echo ",['$dataFutura', ". $ultimo ."]";
             }
             else
             {
-                echo ",['$dataFutura', ".($ultimo+$media)."]";
+                echo ",['$dataFutura', $ultimo]";
             }
         }
 
@@ -124,11 +121,10 @@
     {
         echo "<script>function graficoPrevisioneCommenti(){ var data = google.visualization.arrayToDataTable([['', 'Commenti']";
 
-        $media = abs(trovaMin($medieCommenti) / trovaMax($medieCommenti) - 1);
+        $media = (trovaMin($medieCommenti) + trovaMax($medieCommenti)) / 2;
         $numMedie = count($medieCommenti);
-        $primo = $medieCommenti[(int)$numMedie/2];
         $ultimo = $medieCommenti[$numMedie - 1];
-        $andamento = $ultimo - $primo;
+        $andamento = ($ultimo - $media) / 10;
 
         for($x = 0; $x < $numMedie; $x++)
         {
@@ -138,18 +134,15 @@
         for($y = 1; $y <= $giorni; $y++)
         {
             $dataFutura = date('Y-m-d h:i:s', strtotime('+'. $y .' days'));
-
-            if($andamento > 0)
+            
+            if($andamento < -0.09 || $andamento > 0.09)
             {
-                echo ",['$dataFutura', ".($ultimo+$media)."]";
-            }
-            elseif($andamento == 0)
-            {
-                echo ",['$dataFutura', $ultimo]";
+                $ultimo += $andamento;
+                echo ",['$dataFutura', ". $ultimo ."]";
             }
             else
             {
-                echo ",['$dataFutura', ".($ultimo+$media)."]";
+                echo ",['$dataFutura', $ultimo]";
             }
         }
 
