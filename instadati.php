@@ -51,6 +51,8 @@
         <link href="https://vjs.zencdn.net/4.2/video-js.css" rel="stylesheet" type="text/css">
         <!-- STILE PAGINA -->
         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <!-- ICONA -->
+        <link rel="icon" href="img/instagram.png">
         <!-- GRAFICI API GOOGLE -->
         <script src="https://www.gstatic.com/charts/loader.js"></script>
         <!-- JS VIDEO -->

@@ -171,7 +171,7 @@
 
     function rimozioneNonParole($parole)
     {
-        $schifezze = array("il", "lo", "la", "i", "gli", "le", "del", "dello", "dei", "degli", "della", "delle", "al", "allo", "ai", "agli", "alla", "alle", "dal", "dallo", "dai", "dagli", "dalla", "dalle", "nel", "nello", "nei", "negli", "nella", "nelle", "sul", "sullo", "sui", "sugli", "sulla", "sulle", "per", "con", "tra", "fra", "di", "a", "da", "in", "su", "e", "che", "un", "una", "sono", "si", "è", "é", "mio", "tuo", "suo", "nostro", "vostro", "loro", "no", "mi", "ma", "me", "più", "così", "non", "ho", "ci", "abbiamo", "se", "so", "questo", "questi", "queste", "quelle", "quelli", "quelle", "quei", "io", "tu", "lui", "lei", "egli", "noi", "voi", "essi", "cui", "anche", "fa", "ti", "pi", "cos", "fu", "");
+        $schifezze = array("il", "lo", "la", "i", "gli", "le", "del", "dello", "dei", "degli", "della", "delle", "al", "allo", "ai", "agli", "alla", "alle", "dal", "dallo", "dai", "dagli", "dalla", "dalle", "nel", "nello", "nei", "negli", "nella", "nelle", "sul", "sullo", "sui", "sugli", "sulla", "sulle", "per", "con", "tra", "fra", "di", "a", "da", "in", "su", "e", "che", "un", "una", "sono", "si", "è", "é", "mio", "tuo", "suo", "nostro", "vostro", "loro", "no", "mi", "ma", "me", "più", "così", "non", "ho", "ci", "abbiamo", "se", "so", "questo", "questi", "queste", "quelle", "quelli", "quelle", "quei", "io", "tu", "lui", "lei", "egli", "noi", "voi", "essi", "cui", "anche", "fa", "ti", "pi", "cos", "fu", "ad", "");
 
         foreach ($schifezze as $roba) unset($parole[$roba]);
 
@@ -193,7 +193,7 @@
         $min = $arr[0];
         for ($i = 0; $i< count($arr); $i++)
         {
-            if ($min>$arr[$i]) $min=$arr[$i];
+            if ($min > $arr[$i]) $min = $arr[$i];
         }
         return $min;
     }
